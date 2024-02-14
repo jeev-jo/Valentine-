@@ -1,1 +1,40 @@
-jj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #question {
+            margin-top: 50px;
+        }
+        #gif {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="question">
+        <h2>Will you be my Valentine?</h2>
+        <button onclick="response(true)">Yes</button>
+        <button onclick="response(false)">No</button>
+    </div>
+    <div id="gif">
+        <img src="https://tenor.com/view/love-you-forever-gif-1228734386177666751" alt="Teddy Bear" width="200">
+    </div>
+
+    <script>
+        function response(answer) {
+            if (answer) {
+                window.location.href = "https://tenor.com/view/milk-and-mocha-hug-gif-12705970712921245491"; // Redirect to panda gif page
+            } else {
+                window.location.href = "second_question.html"; // Redirect to second question page
+            }
+        }
+    </script>
+</body>
+</html>
