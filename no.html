@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Sure?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('teddy_bear_background.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: white;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff9999;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Are You Sure?</h1>
+    <button onclick="noClicked()">No</button>
+    <button onclick="yesClicked()">Yes</button>
+
+    <script>
+        function noClicked() {
+            window.location.href = "no.html";
+        }
+
+        function yesClicked() {
+            window.location.href = "yes.html";
+        }
+    </script>
+</body>
+</html>
