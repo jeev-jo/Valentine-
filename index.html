@@ -6,34 +6,45 @@
     <title>Will You Be My Valentine?</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/349/347/698/love-toy-heart-bear-hearts-hd-wallpaper-preview.jpg');
+            background-size: cover;
             font-family: Arial, sans-serif;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        #question {
-            margin-top: 50px;
+        h1 {
+            color: white;
         }
-        #gif {
-            margin-top: 20px;
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff9999;
+            color: white;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div id="question">
-        <h2>Will you be my Valentine?</h2>
-        <button onclick="response(true)">Yes</button>
-        <button onclick="response(false)">No</button>
-    </div>
-    <div id="gif">
-        <img src="https://tenor.com/view/love-you-forever-gif-1228734386177666751" alt="Teddy Bear" width="200">
-    </div>
+    <h1>Will You Be My Valentine?</h1>
+    <button onclick="noClicked()">No</button>
+    <button onclick="yesClicked()">Yes</button>
 
     <script>
-        function response(answer) {
-            if (answer) {
-                window.location.href = "https://tenor.com/view/milk-and-mocha-hug-gif-12705970712921245491"; // Redirect to panda gif page
-            } else {
-                window.location.href = "second_question.html"; // Redirect to second question page
-            }
+        function noClicked() {
+            window.location.href = "no.html";
+        }
+
+        function yesClicked() {
+            window.location.href = "yes.html";
         }
     </script>
 </body>
